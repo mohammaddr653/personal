@@ -1,0 +1,11 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm i && cd front-end && npm i && cd ../back-end && npm i"
+  },
+  "dependencies": {
+    "cpx": "^1.5.0",
+    "rimraf": "^6.0.1"
+  }
+}
