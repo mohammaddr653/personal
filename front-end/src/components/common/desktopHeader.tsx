@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const DesktopHeader = () => {
+const DesktopHeader = ({ user }: any) => {
   return (
     <header>
       <div className="desktopheader-container flex justify-between gap-10 items-center px-20 pt-3">
@@ -12,9 +12,7 @@ const DesktopHeader = () => {
           <Link href={"#"}>درباره من</Link>
           <Link href={"#"}>تماس با من</Link>
         </div>
-        <div>
-          ❤
-        </div>
+        <div>{user ? user.email : "❤"}</div>
       </div>
     </header>
   );
