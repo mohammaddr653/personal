@@ -12,9 +12,6 @@ const {
 
 const error = require("./../middlewares/error");
 
-router.use("/", (req, res) => {
-  res.send("this is api");
-});
 router.use("/auth", notLoggedIn, authRouter);
 
 router.use(error);
