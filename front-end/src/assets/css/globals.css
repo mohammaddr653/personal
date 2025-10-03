@@ -12,6 +12,8 @@
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
   html {
     background-color: red;
@@ -28,7 +30,6 @@
 
 /* شخصی سازی های تیلویند */
 @theme {
-
   --color-primary: #169976;
   --color-secondary: #1dcd9f;
   --color-neutral-primary: #c78a3b5f;
@@ -76,6 +77,16 @@
   --breakpoint-2xl: 100rem;
 }
 
+@layer components {
+  .cu-button-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700;
+  }
+
+  .cu-button-secondary {
+    @apply bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300;
+  }
+}
+
 /* 
 
 sm	: (640px)
@@ -90,15 +101,13 @@ xl	: (1280px)
   font-family: "iransans";
   font-style: normal;
   font-weight: 400;
-  src: local("iransans"),
-    url("../fonts/iransans/IRANSansWeb_FaNum_Bold.woff2");
+  src: local("iransans"), url("../fonts/iransans/IRANSansWeb_FaNum_Bold.woff2");
 }
 @font-face {
   font-family: "iransans";
   font-style: normal;
   font-weight: 200;
-  src: local("iransans"),
-    url("../fonts/iransans/IRANSansWeb_FaNum_Light.woff2");
+  src: local("iransans"), url("../fonts/iransans/IRANSansWeb_FaNum_Light.woff2");
 }
 @font-face {
   font-family: "iransans";
