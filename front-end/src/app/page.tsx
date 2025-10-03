@@ -8,7 +8,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <h1>بدنه</h1>
+      <div className="bg-[url(/Background_Image.jpg)] w-full bg-bottom object-cover h-[700px] bg-no-repeat bg-[#ffffffb3] bg-blend-lighten flex justify-end items-center px-36">
+        <img src="/7247961_3576489.png" alt="" width={400} />
+      </div>
     </main>
   );
 }

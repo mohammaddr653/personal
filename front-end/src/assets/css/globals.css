@@ -19,13 +19,6 @@
     background-color: red;
     scroll-behavior: smooth;
   }
-  body {
-    background-color: white;
-    max-width: 1616px;
-    margin: 0 auto;
-    font-family: iransans;
-    font-weight: 300;
-  }
 }
 
 /* شخصی سازی های تیلویند */
@@ -52,6 +45,8 @@
 
   --spacing-1px: 1px;
   --spacing-2px: 2px;
+  /* نهایت عرض */
+  --spacing-screen: 1616px;
 
   --font-iransans: "iransans";
   --font-weight-weight400: 400;
@@ -79,7 +74,7 @@
 
 @layer components {
   .cu-button-primary {
-    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700;
+    @apply bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700;
   }
 
   .cu-button-secondary {

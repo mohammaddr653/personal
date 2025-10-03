@@ -22,7 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang="fa" dir="rtl">
-      <body className="flex flex-col">
+      <body className="bg-white font-weight300 flex flex-col font-iransans max-w-screen mx-auto">
         <Toaster position="top-right" />
         <DesktopHeader user={user}></DesktopHeader>
         {children}
