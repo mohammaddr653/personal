@@ -1,3 +1,4 @@
+import Greetings from "@/components/common/greetings";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <div className="bg-[url(/Background_Image.jpg)] w-full bg-bottom object-cover h-[700px] bg-no-repeat bg-[#ffffffb3] bg-blend-lighten flex justify-end items-center px-36">
-        <img src="/7247961_3576489.png" alt="" width={400} />
+      <div className="homepage-container">
+        <Greetings></Greetings>
       </div>
     </main>
   );
