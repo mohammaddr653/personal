@@ -1,5 +1,6 @@
 import About from "@/components/common/about";
 import Greetings from "@/components/common/greetings";
+import Skills from "@/components/common/skills";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,9 +11,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <div className="homepage-container flex flex-col gap-10">
+      <div className="homepage-container flex flex-col gap-20">
         <Greetings></Greetings>
         <About></About>
+        <Skills></Skills>
       </div>
     </main>
   );
