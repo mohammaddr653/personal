@@ -1,10 +1,17 @@
 import Link from "next/link";
 import DarkmodeSwitch from "./darkmode-switch";
+import { useScrollStore } from "@/store";
 
 const DesktopHeader = ({ user }: any) => {
+  const { isScrolled, setIsScrolled } = useScrollStore();
+
   return (
     <header className="fixed z-50 w-full max-w-screen">
-      <div className="desktopheader-container flex justify-between gap-10 items-center px-5 sm:px-40 pt-3">
+      <div
+        className={`desktopheader-container flex justify-between gap-10 items-center px-5 md:px-40 pt-3 transition-all duration-300 delay-150 ${
+          isScrolled ? "bg-white dark:bg-neutral-900 shadow-b-lean-300 dark:shadow-b-lean-light" : "bg-transparent"
+        }`}
+      >
         <div>
           <img src="/Negar_1759320537226.png" alt="" width={60} />
         </div>
