@@ -1,5 +1,6 @@
 import About from "@/components/common/about";
 import Greetings from "@/components/common/greetings";
+import Projects from "@/components/common/projects";
 import Skills from "@/components/common/skills";
 import { Metadata } from "next";
 
@@ -15,6 +16,7 @@ export default function Home() {
         <Greetings></Greetings>
         <About></About>
         <Skills></Skills>
+        <Projects></Projects>
       </div>
     </main>
   );

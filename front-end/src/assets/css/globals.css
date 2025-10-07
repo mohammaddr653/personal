@@ -88,6 +88,15 @@
     @apply bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300;
   }
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 /* 
 
 sm	: (640px)
