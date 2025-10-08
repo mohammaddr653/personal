@@ -50,7 +50,7 @@ const ProjectSlider = ({ project }: any) => {
             {project?.online ? (
               <Link
                 href={project?.online}
-                className="border border-neutral-800 rounded-lg p-2 px-3 cursor-pointer text-neutral-800 bg-secondary"
+                className="border border-primary rounded-lg p-2 px-3 cursor-pointer text-neutral-50 bg-primary-glass"
               >
                 نمونه آنلاین
               </Link>

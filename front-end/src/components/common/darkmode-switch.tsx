@@ -1,9 +1,10 @@
 "use client";
 
+import { useDarkStore } from "@/store";
 import { useEffect, useState } from "react";
 
 const DarkmodeSwitch = () => {
-  const [darkmode, setDarkmode] = useState(false);
+  const {darkmode, setDarkmode} = useDarkStore();
   function handleSwitch() {
     darkmode ? setDarkmode(false) : setDarkmode(true);
   }

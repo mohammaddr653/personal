@@ -4,7 +4,10 @@ import SitemapSvg from "../icons/sitemap-svg";
 
 const About = () => {
   return (
-    <div id="about-me" className="px-5 md:px-40 flex flex-col-reverse md:flex-row gap-5">
+    <div
+      id="about-me"
+      className="px-5 md:px-40 flex flex-col-reverse md:flex-row gap-5 scroll-mt-20"
+    >
       <ul className="flex flex-[1] flex-col gap-2 text-neutral-700 dark:text-neutral-200">
         <li className="flex items-center gap-4">
           <span className="bg-primary dark:bg-secondary w-0.75 h-full ms-0.5 rounded-md hidden md:flex"></span>

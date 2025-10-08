@@ -42,7 +42,7 @@ const Projects = () => {
       {projects.length ? (
         <div
           id="my-projects"
-          className="projects-container px-5 md:px-40 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200"
+          className="projects-container px-5 md:px-40 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200 scroll-mt-20"
         >
           <h3 className="text-2xl font-weight400">نمونه کارها :</h3>
           <div className="relative">

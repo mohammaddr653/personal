@@ -2,3 +2,4 @@
 
 export { default as useUserStore } from "./userStore";
 export { default as useScrollStore } from "./scrollStore";
+export { default as useDarkStore } from "./darkStore";
