@@ -5,13 +5,13 @@ import TypescriptSvg from "../icons/typescript-svg";
 
 const ProjectSlider = () => {
   return (
-    <div className="projectslider-container w-full flex flex-col-reverse md:flex-row justify-between items-start md:gap-5">
-      <div className="flex flex-[4] flex-col self-stretch md:self-auto gap-7 py-5 h-fit">
+    <div className="projectslider-container w-full flex flex-col-reverse md:flex-row justify-between items-center md:gap-5">
+      <div className="flex flex-[4] flex-col self-stretch md:self-auto gap-7 h-fit">
         <div className="flex flex-col items-center md:items-start gap-2">
           <h5 className="text-center text-2xl font-weight400 text-primary dark:text-secondary">
             الکران
           </h5>
-          <p className=" text-center text-size15 font-weight200">
+          <p className="text-size15 font-weight200">
             الکران یعنی یک مرجع تخصصی برای خودروهای الکتریکی
           </p>
         </div>

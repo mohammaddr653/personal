@@ -24,6 +24,7 @@
 /* شخصی سازی های تیلویند */
 @theme {
   --color-primary: #169976;
+  --color-primary-glass:#167c61c9;
   --color-secondary: #1dcd9f;
   --color-neutral-primary: #c78a3b5f;
   --color-cu-neutral-400: #f8f3e6;

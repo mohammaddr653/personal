@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import {
   Navigation,
   Scrollbar,
+  Pagination,
   A11y,
   Autoplay,
   EffectFade,
@@ -13,7 +14,7 @@ import "../../assets/css/projects.css";
 import "swiper/css";
 
 import "swiper/css/pagination";
-
+import "swiper/css/effect-fade";
 import "swiper/css/scrollbar";
 import SwiperButtonPrev from "./swiper-button-prev";
 import SwiperButtonNext from "./swiper-button-next";
@@ -25,9 +26,17 @@ const Projects = () => {
       <h3 className="text-2xl font-weight400">نمونه کارها :</h3>
       <div className="relative">
         <Swiper
-          modules={[Autoplay, EffectFade, Navigation, Scrollbar, A11y]}
+          modules={[
+            Autoplay,
+            Pagination,
+            EffectFade,
+            Navigation,
+            Scrollbar,
+            A11y,
+          ]}
           initialSlide={0}
           loop={true}
+          slidesPerView={1}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           speed={500}
@@ -36,30 +45,16 @@ const Projects = () => {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            576: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 1,
-            },
-            992: {
-              slidesPerView: 1,
-            },
-          }}
         >
-          <div className="swiperjs-controlls flex justify-end w-full items-center gap-2 absolute top-full h-[20px] mt-[20px] z-10 text-black">
+          <div className="swiperjs-controlls flex flex-col md:flex-row justify-end items-center gap-2 absolute top-0 md:top-auto md:bottom-0 right-0 md:left-0 md:right-auto z-10 text-black">
             <SwiperButtonPrev
               className={
-                "hidden cursor-pointer lg:flex w-[30px] bg-white aspect-square justify-center items-center rounded-full"
+                "cursor-pointer flex w-[35px] md:w-[50px] bg-primary md:bg-primary-glass md:border-4 text-white border-white dark:border-neutral-900 aspect-square justify-center items-center rounded-full"
               }
             ></SwiperButtonPrev>
             <SwiperButtonNext
               className={
-                "hidden cursor-pointer lg:flex w-[30px] bg-white aspect-square justify-center items-center rounded-full"
+                "cursor-pointer flex w-[35px] md:w-[50px] bg-primary md:bg-primary-glass md:border-4 text-white border-white dark:border-neutral-900 aspect-square justify-center items-center rounded-full"
               }
             ></SwiperButtonNext>
           </div>
