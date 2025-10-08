@@ -1,0 +1,30 @@
+[
+  {
+    "title": "الکران",
+    "description": "الکران یعنی یک مرجع تخصصی برای خودروهای الکتریکی",
+    "details": ["طراحی کاملا ریسپانسیو", "الهام گرفته شده از ویجیاتو"],
+    "github": "https://github.com/mohammaddr653/car-electric",
+    "online": "https://car-electric.vercel.app/",
+    "gallery": [
+      {
+        "desktop": "localhost_3000_ (7).jpg",
+        "mobile": "localhost_3000_ (8).jpg"
+      }
+    ],
+    "langs": ["react", "ts", "bootstrap"]
+  },
+  {
+    "title": "وانیمارت",
+    "description": "الکران یعنی یک مرجع تخصصی برای خودروهای الکتریکی",
+    "details": ["طراحی کاملا ریسپانسیو", "الهام گرفته شده از ویجیاتو"],
+    "github": "https://github.com/mohammaddr653/car-electric",
+    "online": "https://car-electric.vercel.app/",
+    "gallery": [
+      {
+        "desktop": "localhost_3000_ (7).jpg",
+        "mobile": "localhost_3000_ (8).jpg"
+      }
+    ],
+    "langs": ["react", "ts", "js", "zustand", "express", "mongo", "tailwind"]
+  }
+]

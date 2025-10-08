@@ -24,7 +24,7 @@
 /* شخصی سازی های تیلویند */
 @theme {
   --color-primary: #169976;
-  --color-primary-glass:#167c61c9;
+  --color-primary-glass: #167c61c9;
   --color-secondary: #1dcd9f;
   --color-neutral-primary: #c78a3b5f;
   --color-cu-neutral-400: #f8f3e6;
@@ -37,7 +37,7 @@
   --color-glass-shadow: rgba(0, 0, 0, 0.684);
 
   --shadow-b-lean-300: 0 0.5px 3px rgba(0, 0, 0, 0.1);
-  --shadow-b-lean-light: 0 0.5px 1px #737373;
+  --shadow-b-lean-light: 0 0.5px 2px #167c61c9;
   --shadow-b-card-300: 0 0 5px 1px #ab3e16;
   --shadow-card-neutral: 0 0 5px 1px #bbbbbb;
   --shadow-full-ring: 0 0 3px 2px #ab3e16;

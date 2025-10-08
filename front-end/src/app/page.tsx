@@ -17,6 +17,12 @@ export default function Home() {
         <About></About>
         <Skills></Skills>
         <Projects></Projects>
+        <div
+          id="contact-me"
+          className="contact-container px-5 md:px-40 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200"
+        >
+          <h3 className="text-2xl font-weight400">تماس با من :</h3>
+        </div>
       </div>
     </main>
   );

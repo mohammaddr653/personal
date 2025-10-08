@@ -15,8 +15,8 @@ import ZustandSvg from "@/components/icons/zustand-svg";
 
 const Skills = () => {
   return (
-    <div className="px-5 md:px-40 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200">
-      <h3 className="text-2xl font-weight400">توانایی های فنی :</h3>
+    <div id="my-skills" className="px-5 md:px-40 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200">
+      <h3 className="text-2xl font-weight400">مهارت ها :</h3>
       <div className="flex flex-wrap gap-5 [&>*]:grow">
         <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <NextjsSvg width="100px"></NextjsSvg>
