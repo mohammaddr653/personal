@@ -3,6 +3,7 @@ import Greetings from "@/components/common/greetings";
 import Projects from "@/components/common/projects";
 import Skills from "@/components/common/skills";
 import { Metadata } from "next";
+import Contact from "@/components/common/contact";
 
 export const metadata: Metadata = {
   title: "محمد امین درخشنده",
@@ -12,17 +13,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <div className="homepage-container flex flex-col gap-20">
+      <div className="homepage-container flex flex-col gap-20 pb-20">
         <Greetings></Greetings>
         <About></About>
         <Skills></Skills>
         <Projects></Projects>
-        <div
-          id="contact-me"
-          className="contact-container px-5 md:px-40 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200"
-        >
-          <h3 className="text-2xl font-weight400">تماس با من :</h3>
-        </div>
+        <Contact></Contact>
       </div>
     </main>
   );

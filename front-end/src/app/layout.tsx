@@ -7,6 +7,7 @@ import useLoadUser from "@/hooks/useLoadUser";
 import axios from "axios";
 import { useEffect } from "react";
 import { useScrollStore } from "@/store";
+import { iransans } from "./ui/fonts";
 
 export default function RootLayout({
   children,
@@ -38,7 +39,9 @@ export default function RootLayout({
 
   return (
     <html lang="fa" dir="rtl">
-      <body className="bg-white dark:bg-neutral-900 font-weight300 flex flex-col font-iransans max-w-screen mx-auto">
+      <body
+        className={`bg-white dark:bg-neutral-900 font-weight300 flex flex-col ${iransans.className} max-w-screen mx-auto`}
+      >
         <Toaster position="top-right" />
         <DesktopHeader user={user}></DesktopHeader>
         {children}

@@ -1,0 +1,37 @@
+import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
+import { Vazirmatn } from "next/font/google";
+
+export const roboto = Roboto({
+  weight: "900",
+  subsets: ["latin"],
+});
+
+export const vazir = Vazirmatn({
+  subsets: ["arabic"],
+});
+
+export const iransans = localFont({
+  src: [
+    {
+      path: "../../assets/fonts/iransans/IRANSansWeb_FaNum_Bold.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/iransans/IRANSansWeb_FaNum_Light.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/iransans/IRANSansWeb_FaNum_Medium.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/iransans/IRANSansWeb_FaNum_UltraLight.woff2",
+      weight: "100",
+      style: "normal",
+    },
+  ],
+});
