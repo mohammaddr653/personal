@@ -19,6 +19,12 @@
     background-color: red;
     scroll-behavior: smooth;
   }
+  input {
+    outline: none;
+  }
+  textarea {
+    outline: none;
+  }
 }
 
 /* شخصی سازی های تیلویند */
@@ -51,6 +57,9 @@
   --spacing-screen: 1616px;
 
   --font-vazir: "vazir";
+
+  --font-weight-weight900: 900;
+  --font-weight-weight800: 800;
   --font-weight-weight600: 600;
   --font-weight-weight500: 500;
   --font-weight-weight400: 400;

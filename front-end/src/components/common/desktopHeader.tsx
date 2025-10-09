@@ -21,7 +21,7 @@ const DesktopHeader = ({ user }: any) => {
           <Link href={"#about-me"}>درباره من</Link>
           <Link href={"#my-skills"}>مهارت ها</Link>
           <Link href={"#my-projects"}>نمونه کار ها</Link>
-          <Link href={"#"}>تماس با من</Link>
+          <Link href={"#contact-me"}>تماس با من</Link>
         </div>
         <div className="flex gap-2 items-center">
           {user && user.isadmin ? (

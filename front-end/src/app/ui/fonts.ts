@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google";
 import { Vazirmatn } from "next/font/google";
 
 export const roboto = Roboto({
-  weight: "900",
+  weight: ["500", "800", "900"],
   subsets: ["latin"],
 });
 
