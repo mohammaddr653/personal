@@ -1,13 +1,14 @@
 "use client";
 import { roboto } from "@/app/ui/fonts";
-import { useDarkStore } from "@/store";
+import { useDarkStore, useWidthStore } from "@/store";
 import Image from "next/image";
 import PhoneSvg from "../icons/phone-svg";
 import EmailSvg from "../icons/email-svg";
 import LocationSvg from "../icons/location-svg";
+import { BREAK_POINTS } from "../../../config";
 
 const Contact = () => {
-  const { darkmode, setDarkmode } = useDarkStore();
+  const { width, setWidth } = useWidthStore();
 
   return (
     <div
@@ -16,14 +17,27 @@ const Contact = () => {
     >
       <h3 className="text-2xl font-weight400">تماس با من :</h3>
       <div className="relative overflow-hidden">
-        <Image
-          src={darkmode ? "/2147734183.jpg" : "/Background_Image.jpg"}
-          alt="form-background"
-          className="absolute object-center object-cover"
-          fill={true}
-        ></Image>
-        <div className="relative z-10 flex items-center p-20 justify-between bg-[#ffffff77] dark:bg-[#000000bd]">
-          <div className="flex-[7]">afeaf</div>
+        {width < BREAK_POINTS.md ? null : (
+          <video
+            src="/2040076-hd_1920_1080_24fps.mp4"
+            className="absolute object-center object-cover h-full w-full"
+            poster="/Annotation 2025-10-12 171545.jpg"
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
+        )}
+        <div className="relative z-10 flex items-stretch md:p-20 gap-10 justify-between bg-[#ffffff77] dark:bg-[#000000bd]">
+          <div className="flex-[7] hidden md:flex items-center justify-start">
+            <Image
+              src={"/Annotation 2025-10-12 172044.png"}
+              alt="lets talk - typography"
+              className="w-full object-cover"
+              width={763}
+              height={387}
+            ></Image>
+          </div>
           <div className="flex backdrop-blur-xl shadow shadow-primary-glass rounded-lg flex-[3] flex-col gap-5 py-5 px-10 pb-6 items-stretch">
             <h4
               className={`text-center text-primary-glass dark:text-secondary text-2xl opacity-50 dark:opacity-30 ${roboto.className} font-weight800`}

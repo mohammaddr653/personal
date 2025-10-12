@@ -35,3 +35,13 @@ export const iransans = localFont({
     },
   ],
 });
+
+export const nastaliq = localFont({
+  src: [
+    {
+      path: "../../assets/fonts/nastaliq/IranNastaliq_YasDL.com.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+});
