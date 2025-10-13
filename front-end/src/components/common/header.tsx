@@ -1,12 +1,13 @@
 "use client";
-import { BREAK_POINTS } from "../../../config";
 import { useScrollStore, useUserStore, useWidthStore } from "../../store";
-import { nastaliq } from "@/app/ui/fonts";
 import Link from "next/link";
 import DarkmodeSwitch from "./darkmode-switch";
 import MenuSvg from "../icons/menu-svg";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import CloseSvg from "../icons/close-svg";
+import Logo from "./logo";
+import MenuNavbar from "./menu-navbar";
 
 const Header = () => {
   const [mobileMenuShow, setMobileMenuShow] = useState<boolean>(false);
@@ -27,19 +28,12 @@ const Header = () => {
             : "bg-transparent"
         }`}
       >
-        <div>
-          <h1
-            className={`${nastaliq.className} text-4xl text-primary dark:text-secondary font-weight400`}
-          >
-            محمدامین درخشنده
-          </h1>
-        </div>
-        <div className="hidden md:flex gap-5 text-size14 text-primary dark:text-secondary">
-          <Link href={"#about-me"}>درباره من</Link>
-          <Link href={"#my-skills"}>مهارت ها</Link>
-          <Link href={"#my-projects"}>نمونه کار ها</Link>
-          <Link href={"#contact-me"}>تماس با من</Link>
-        </div>
+        <Logo></Logo>
+        <nav className="hidden md:flex">
+          <ul className="flex gap-5 text-size14 text-primary dark:text-secondary">
+            <MenuNavbar></MenuNavbar>
+          </ul>
+        </nav>
         <div className="flex gap-2 items-center text-primary dark:text-secondary">
           {user && user.isadmin ? (
             <Link href={"/admin"} className="cu-button-primary dark:bg-red-600">
@@ -47,12 +41,12 @@ const Header = () => {
             </Link>
           ) : null}
           <DarkmodeSwitch></DarkmodeSwitch>
-          <MenuSvg
-            width={30}
-            fill={"currentColor"}
-            className={"cursor-pointer md:hidden"}
+          <button
             onClick={() => setMobileMenuShow(true)}
-          ></MenuSvg>
+            className={"cursor-pointer md:hidden"}
+          >
+            <MenuSvg width={30} fill={"currentColor"}></MenuSvg>
+          </button>
         </div>
         {mobileMenuShow ? (
           <div
@@ -61,12 +55,24 @@ const Header = () => {
           ></div>
         ) : null}
         <div
-          className={`mobileMenu h-[100dvh] w-[90%] bg-white dark:bg-neutral-900 absolute transition-[left] duration-500 top-0 ${
+          className={`mobileMenu flex flex-col gap-5 items-stretch h-[100dvh] w-[90%] dark:shadow-r-lean-light bg-white dark:bg-neutral-900 absolute transition-[left] duration-500 top-0 ${
             mobileMenuShow ? "left-0" : "left-[-100%]"
           }`}
         >
-          afef
-          <button onClick={() => setMobileMenuShow(false)}>close</button>
+          <div className="flex justify-between items-center gap-2 p-4 px-5">
+            <Logo></Logo>
+            <button
+              onClick={() => setMobileMenuShow(false)}
+              className={"cursor-pointer text-primary dark:text-secondary"}
+            >
+              <CloseSvg width={25} fill={"currentColor"}></CloseSvg>
+            </button>
+          </div>
+          <nav className="flex p-5">
+            <ul className="flex flex-col gap-5 text-size17 text-primary dark:text-secondary">
+              <MenuNavbar></MenuNavbar>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
