@@ -34,7 +34,7 @@ const Header = () => {
             <MenuNavbar></MenuNavbar>
           </ul>
         </nav>
-        <div className="flex gap-2 items-center text-primary dark:text-secondary">
+        <div className="flex gap-3 items-center text-primary dark:text-secondary">
           {user && user.isadmin ? (
             <Link href={"/admin"} className="cu-button-primary dark:bg-red-600">
               پنل ادمین
@@ -55,7 +55,7 @@ const Header = () => {
           ></div>
         ) : null}
         <div
-          className={`mobileMenu flex flex-col gap-5 items-stretch h-[100dvh] w-[90%] dark:shadow-r-lean-light bg-white dark:bg-neutral-900 absolute transition-[left] duration-500 top-0 ${
+          className={`mobileMenu flex flex-col md:hidden gap-5 items-stretch h-[100dvh] w-[90%] dark:shadow-r-lean-light bg-white dark:bg-neutral-900 absolute transition-[left] duration-500 top-0 ${
             mobileMenuShow ? "left-0" : "left-[-100%]"
           }`}
         >

@@ -2,9 +2,11 @@
 
 import { useDarkStore } from "@/store";
 import { useEffect, useState } from "react";
+import SunSvg from "../icons/sun-svg";
+import MoonSvg from "../icons/moon-svg";
 
 const DarkmodeSwitch = () => {
-  const {darkmode, setDarkmode} = useDarkStore();
+  const { darkmode, setDarkmode } = useDarkStore();
   function handleSwitch() {
     darkmode ? setDarkmode(false) : setDarkmode(true);
   }
@@ -13,7 +15,15 @@ const DarkmodeSwitch = () => {
     darkmode ? html.classList.add("dark") : html.classList.remove("dark");
   }, [darkmode]);
 
-  return <button onClick={handleSwitch}>{darkmode ? "🌙" : "🔆"}</button>;
+  return (
+    <button onClick={handleSwitch} className="cursor-pointer">
+      {darkmode ? (
+        <SunSvg width={25} fill={"currentColor"}></SunSvg>
+      ) : (
+        <MoonSvg width={25} fill={"currentColor"}></MoonSvg>
+      )}
+    </button>
+  );
 };
 
 export default DarkmodeSwitch;

@@ -28,7 +28,7 @@ const Contact = () => {
             playsInline
           ></video>
         )}
-        <div className="relative z-10 flex items-stretch p-2 md:p-20 gap-10 justify-between md:bg-[#ffffff77] md:dark:bg-[#000000bd] bg-transparent">
+        <div className="relative z-10 flex items-stretch p-2 md:p-15 gap-10 justify-between md:bg-[#ffffff77] md:dark:bg-[#000000bd] bg-transparent">
           <div className="flex-[7] hidden md:flex items-center justify-start">
             <Image
               src={"/Annotation 2025-10-12 172044.png"}
@@ -48,6 +48,11 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="نام"
+                className=" text-primary transition-all duration-300 dark:text-neutral-600 bg-[#fafafaea] border border-transparent backdrop-blur-lg scrollbar-hide focus:border-secondary focus:shadow shadow-secondary rounded-lg p-2"
+              />
+              <input
+                type="text"
+                placeholder="ایمیل یا شماره تماس"
                 className=" text-primary transition-all duration-300 dark:text-neutral-600 bg-[#fafafaea] border border-transparent backdrop-blur-lg scrollbar-hide focus:border-secondary focus:shadow shadow-secondary rounded-lg p-2"
               />
               <textarea
