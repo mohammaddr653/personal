@@ -1,12 +1,9 @@
-import { useDarkStore } from "@/store";
 import Image from "next/image";
 import Link from "next/link";
 import DownloadSvg from "../icons/download-svg";
 import SocialIcons from "./social-icons";
 
 const Footer = () => {
-  const { darkmode, setDarkmode } = useDarkStore();
-
   return (
     <footer className="mt-auto">
       <div className="footer-container pt-20 flex flex-col gap-15 overflow-y-hidden bg-[url(/2147734183.jpg)] dark:bg-[url(/417214515_fb463481-61a6-4dde-9787-66a180fa208c.jpg)] bg-cover bg-center bg-[#ffffffb3] dark:bg-[#000000bd] bg-blend-lighten dark:bg-blend-darken px-5 md:px-40 text-neutral-800 dark:text-neutral-200">
@@ -30,8 +27,16 @@ const Footer = () => {
         </div>
         <div className="mt-auto">
           <Image
-            src={darkmode ? "/derakhshande-dark.png" : "/derakhshande.png"}
+            src={"/derakhshande-dark.png"}
             alt="تایپوگرافی"
+            className="hidden dark:block"
+            width={1906}
+            height={133}
+          ></Image>
+          <Image
+            src={"/derakhshande.png"}
+            alt="تایپوگرافی"
+            className="dark:hidden"
             width={1906}
             height={133}
           ></Image>

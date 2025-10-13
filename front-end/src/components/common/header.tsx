@@ -1,10 +1,13 @@
+"use client";
+import { BREAK_POINTS } from "../../../config";
+import { useScrollStore, useUserStore, useWidthStore } from "../../store";
+import { nastaliq } from "@/app/ui/fonts";
 import Link from "next/link";
 import DarkmodeSwitch from "./darkmode-switch";
-import { useScrollStore } from "@/store";
-import { nastaliq } from "@/app/ui/fonts";
 
-const DesktopHeader = ({ user }: any) => {
+const Header = () => {
   const { isScrolled, setIsScrolled } = useScrollStore();
+  const { user } = useUserStore();
 
   return (
     <header className="fixed z-50 w-full max-w-screen">
@@ -41,4 +44,4 @@ const DesktopHeader = ({ user }: any) => {
   );
 };
 
-export default DesktopHeader;
+export default Header;

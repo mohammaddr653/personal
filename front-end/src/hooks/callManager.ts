@@ -1,5 +1,5 @@
 //this custom hook is for managing axios calls
-
+"use client";
 import { toast } from "sonner";
 import { useState } from "react";
 import { useRouter } from "next/navigation";

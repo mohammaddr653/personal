@@ -28,7 +28,7 @@ const Contact = () => {
             playsInline
           ></video>
         )}
-        <div className="relative z-10 flex items-stretch md:p-20 gap-10 justify-between bg-[#ffffff77] dark:bg-[#000000bd]">
+        <div className="relative z-10 flex items-stretch p-2 md:p-20 gap-10 justify-between md:bg-[#ffffff77] md:dark:bg-[#000000bd] bg-transparent">
           <div className="flex-[7] hidden md:flex items-center justify-start">
             <Image
               src={"/Annotation 2025-10-12 172044.png"}
@@ -38,7 +38,7 @@ const Contact = () => {
               height={387}
             ></Image>
           </div>
-          <div className="flex backdrop-blur-xl shadow shadow-primary-glass rounded-lg flex-[3] flex-col gap-5 py-5 px-10 pb-6 items-stretch">
+          <div className="flex md:backdrop-blur-xl shadow shadow-primary-glass rounded-lg flex-[3] flex-col gap-5 py-5 px-10 pb-6 items-stretch">
             <h4
               className={`text-center text-primary-glass dark:text-secondary text-2xl opacity-50 dark:opacity-30 ${roboto.className} font-weight800`}
             >
