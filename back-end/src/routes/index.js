@@ -4,6 +4,7 @@ const router = express.Router();
 const authRouter = require("./auth");
 const tokenRouter = require("./token");
 const projectsRouter = require("./projects");
+const messagesRouter = require("./messages");
 
 const {
   isLoggedIn,
@@ -18,6 +19,7 @@ router.use(setReqUser); //if invalid token exists in request header set the req.
 router.use("/token", tokenRouter);
 router.use("/auth", notLoggedIn, authRouter);
 router.use("/projects", projectsRouter);
+router.use("/messages", messagesRouter);
 
 router.use(error);
 

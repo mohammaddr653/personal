@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`bg-white dark:bg-neutral-900 font-weight300 flex flex-col ${iransans.className} max-w-screen mx-auto`}
+        className={`bg-white dark:bg-neutral-900 transition-colors duration-300 font-weight300 flex flex-col ${iransans.className} max-w-screen mx-auto`}
       >
         <ClientBootstrap></ClientBootstrap>
         <Toaster position="top-right" />
