@@ -80,13 +80,15 @@ const Projects = () => {
                 ></SwiperButtonNext>
               </div>
 
-              {projects?.map((project: any, index: any) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <ProjectSlider project={project}></ProjectSlider>
-                  </SwiperSlide>
-                );
-              })}
+              {projects
+                ?.sort((a, b) => a.id - b.id)
+                .map((project: any, index: any) => {
+                  return (
+                    <SwiperSlide key={index}>
+                      <ProjectSlider project={project}></ProjectSlider>
+                    </SwiperSlide>
+                  );
+                })}
             </Swiper>
           </div>
         </div>

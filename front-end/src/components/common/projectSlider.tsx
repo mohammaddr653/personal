@@ -10,6 +10,8 @@ import TailwindSvg from "../icons/tailwind-svg";
 import JavascriptSvg from "../icons/javascript-svg";
 import ZustandSvg from "../icons/zustand-svg";
 import NextjsSvg from "../icons/nextjs-svg";
+import CssSvg from "../icons/css-svg";
+import HtmlSvg from "../icons/html-svg ";
 
 const ProjectSlider = ({ project }: any) => {
   return (
@@ -78,7 +80,7 @@ const ProjectSlider = ({ project }: any) => {
           <div className="top-0 right-0 absolute w-full h-full">
             <img src="/30c3c9f943e1f47729c6a627bb02ccef.png" alt="smartphone" />
           </div>
-          {project?.gallery.length ? (
+          {project?.gallery.length && project.gallery[0].mobile ? (
             <div className="relative image-wrapper w-[75%] h-[73%] mx-auto bg-amber-700 outline-2 outline-black mt-[21%] overflow-y-scroll scrollbar-hide">
               <img
                 src={`/${project.gallery[0].mobile}`}
@@ -112,6 +114,11 @@ const ProjectSlider = ({ project }: any) => {
                   return (
                     <TailwindSvg key={index} className={"w-full"}></TailwindSvg>
                   );
+                case "html":
+                  return <HtmlSvg key={index} className={"w-full"}></HtmlSvg>;
+
+                case "css":
+                  return <CssSvg key={index} className={"w-full"}></CssSvg>;
                 case "zustand":
                   return (
                     <ZustandSvg key={index} className={"w-full"}></ZustandSvg>
