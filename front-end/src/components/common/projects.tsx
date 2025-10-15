@@ -5,7 +5,6 @@ import {
   Scrollbar,
   Pagination,
   A11y,
-  Autoplay,
   EffectFade,
 } from "swiper/modules";
 
@@ -47,25 +46,13 @@ const Projects = () => {
           <h3 className="text-2xl font-weight400">نمونه کارها :</h3>
           <div className="relative">
             <Swiper
-              modules={[
-                Autoplay,
-                Pagination,
-                EffectFade,
-                Navigation,
-                Scrollbar,
-                A11y,
-              ]}
+              modules={[Pagination, EffectFade, Navigation, Scrollbar, A11y]}
               initialSlide={0}
               loop={true}
               slidesPerView={1}
               effect="fade"
               fadeEffect={{ crossFade: true }}
               speed={500}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
             >
               <div className="swiperjs-controlls flex flex-col md:flex-row justify-end items-center gap-2 absolute top-[50%] md:bottom-0 md:top-auto right-0 md:left-0 md:right-auto z-10 text-black">
                 <SwiperButtonPrev

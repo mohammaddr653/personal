@@ -21,61 +21,61 @@ const Skills = () => {
     >
       <h3 className="text-2xl font-weight400">مهارت ها :</h3>
       <div className="flex flex-wrap gap-5 [&>*]:grow">
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
-          <NextjsSvg width="100px"></NextjsSvg>
-          <h4 className="text-neutral-800">Next.js</h4>
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+          <NextjsSvg width="100px" fill={"currentColor"}></NextjsSvg>
+          <h4>Next.js</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
-          <ReactSvg width="100px"></ReactSvg>
-          <h4 className="text-neutral-800">React.js</h4>
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+          <ReactSvg width="100px" className="text-white dark:text-neutral-900" ></ReactSvg>
+          <h4>React.js</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <NodeSvg width="100px"></NodeSvg>
-          <h4 className="text-neutral-800">Node.js</h4>
+          <h4>Node.js</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
-          <ExpressSvg width="100px"></ExpressSvg>
-          <h4 className="text-neutral-800">Express</h4>
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+          <ExpressSvg width="100px" fill={"currentColor"}></ExpressSvg>
+          <h4>Express</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <MongoSvg width="100px"></MongoSvg>
-          <h4 className="text-neutral-800">MongoDB</h4>
+          <h4>MongoDB</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <TypescriptSvg width="100px"></TypescriptSvg>
-          <h4 className="text-neutral-800">Typescript</h4>
+          <h4>Typescript</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <JavascriptSvg width="100px"></JavascriptSvg>
-          <h4 className="text-neutral-800">Javascript</h4>
+          <h4>Javascript</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <TailwindSvg width="100px"></TailwindSvg>
-          <h4 className="text-neutral-800">Tailwind</h4>
+          <h4>Tailwind</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <BootstrapSvg width="100px"></BootstrapSvg>
-          <h4 className="text-neutral-800">Bootstrap</h4>
+          <h4>Bootstrap</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <HtmlSvg width="100px"></HtmlSvg>
-          <h4 className="text-neutral-800">HTML</h4>
+          <h4>HTML</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <CssSvg width="100px"></CssSvg>
-          <h4 className="text-neutral-800">CSS</h4>
+          <h4>CSS</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <GitSvg width="100px"></GitSvg>
-          <h4 className="text-neutral-800">Git & Github</h4>
+          <h4>Git & Github</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <ReduxSvg width="100px"></ReduxSvg>
-          <h4 className="text-neutral-800">ReduxTLK</h4>
+          <h4>ReduxTLK</h4>
         </div>
-        <div className="bg-white rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
+        <div className="bg-white dark:bg-neutral-900 rounded-lg flex flex-col justify-between items-center gap-4 p-5 border-2 border-secondary">
           <ZustandSvg width="100px"></ZustandSvg>
-          <h4 className="text-neutral-800">Zustand</h4>
+          <h4>Zustand</h4>
         </div>
       </div>
     </div>

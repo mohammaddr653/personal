@@ -90,18 +90,26 @@ const ProjectSlider = ({ project }: any) => {
           ) : null}
         </figure>
         {project?.langs.length ? (
-          <div className="flex dark:bg-white w-[8%] md:p-2 p-1 md:border border-neutral-300 rounded-lg flex-col absolute left-0 top-0 items-end">
+          <div className="flex w-[8%] md:p-2 p-1 md:border-2 border-secondary rounded-lg flex-col absolute left-0 top-0 items-end">
             {project.langs.map((item: any, index: any) => {
               switch (item) {
                 case "nextjs":
                   return (
-                    <NextjsSvg key={index} className={"w-full"}></NextjsSvg>
+                    <NextjsSvg
+                      key={index}
+                      className={"w-full"}
+                      fill={"currentColor"}
+                    ></NextjsSvg>
                   );
                 case "nodejs":
                   return <NodeSvg key={index} className={"w-full"}></NodeSvg>;
                 case "express":
                   return (
-                    <ExpressSvg key={index} className={"w-full"}></ExpressSvg>
+                    <ExpressSvg
+                      key={index}
+                      className={"w-full"}
+                      fill={"currentColor"}
+                    ></ExpressSvg>
                   );
                 case "js":
                   return (
@@ -126,7 +134,12 @@ const ProjectSlider = ({ project }: any) => {
                 case "mongo":
                   return <MongoSvg key={index} className={"w-full"}></MongoSvg>;
                 case "react":
-                  return <ReactSvg key={index} className={"w-full"}></ReactSvg>;
+                  return (
+                    <ReactSvg
+                      key={index}
+                      className={"w-full text-white dark:text-neutral-900"}
+                    ></ReactSvg>
+                  );
                 case "ts":
                   return (
                     <TypescriptSvg
