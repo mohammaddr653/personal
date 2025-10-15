@@ -9,6 +9,7 @@ import MongoSvg from "../icons/mongo-svg";
 import TailwindSvg from "../icons/tailwind-svg";
 import JavascriptSvg from "../icons/javascript-svg";
 import ZustandSvg from "../icons/zustand-svg";
+import NextjsSvg from "../icons/nextjs-svg";
 
 const ProjectSlider = ({ project }: any) => {
   return (
@@ -90,6 +91,10 @@ const ProjectSlider = ({ project }: any) => {
           <div className="flex dark:bg-white w-[8%] md:p-2 p-1 md:border border-neutral-300 rounded-lg flex-col absolute left-0 top-0 items-end">
             {project.langs.map((item: any, index: any) => {
               switch (item) {
+                case "nextjs":
+                  return (
+                    <NextjsSvg key={index} className={"w-full"}></NextjsSvg>
+                  );
                 case "nodejs":
                   return <NodeSvg key={index} className={"w-full"}></NodeSvg>;
                 case "express":

@@ -1,7 +1,7 @@
 "use client";
 
 import { useDarkStore } from "@/store";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import SunSvg from "../icons/sun-svg";
 import MoonSvg from "../icons/moon-svg";
 

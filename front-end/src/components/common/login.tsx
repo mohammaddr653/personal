@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import LoadingButton from "./loadingButton";
 import callManager from "../../hooks/callManager";
 import axios from "axios";
-import { SERVER_API, SITE_KEY } from "../../../config";
+import { SERVER_API } from "../../../config";
 import useLoadUser from "@/hooks/useLoadUser";
 import Link from "next/link";
 const Login = () => {

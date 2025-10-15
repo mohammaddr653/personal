@@ -1,5 +1,5 @@
 "use client";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
   Scrollbar,

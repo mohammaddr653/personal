@@ -16,7 +16,6 @@
 
 @layer base {
   html {
-    background-color: red;
     scroll-behavior: smooth;
   }
   input {

@@ -1,10 +1,6 @@
 import "../assets/css/globals.css";
 import Footer from "@/components/common/footer";
 import { Toaster } from "sonner";
-import useLoadUser from "@/hooks/useLoadUser";
-import axios from "axios";
-import { useEffect } from "react";
-import { useScrollStore, useWidthStore } from "@/store";
 import { iransans } from "./ui/fonts";
 import Header from "@/components/common/header";
 import ClientBootstrap from "@/components/common/clientBootstrap";
