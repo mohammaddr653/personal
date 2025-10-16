@@ -1,6 +1,6 @@
 "use client";
 import { roboto } from "@/app/ui/fonts";
-import { useWidthStore } from "@/store";
+import { useDarkStore, useWidthStore } from "@/store";
 import Image from "next/image";
 import PhoneSvg from "../icons/phone-svg";
 import EmailSvg from "../icons/email-svg";
@@ -16,6 +16,7 @@ import axios from "axios";
 const Contact = () => {
   const { call, loading } = callManager();
   const { width, setWidth } = useWidthStore();
+  const { darkmode, setDarkmode } = useDarkStore();
 
   const formSchema = z.object({
     name: z.string().min(1),
@@ -49,25 +50,49 @@ const Contact = () => {
       <h3 className="text-2xl font-weight400">تماس با من :</h3>
       <div className="relative overflow-hidden">
         {width < BREAK_POINTS.md ? null : (
-          <video
-            src="/2040076-hd_1920_1080_24fps.mp4"
-            className="absolute object-center object-cover h-full w-full"
-            poster="/Annotation 2025-10-12 171545.jpg"
-            autoPlay
-            loop
-            muted
-            playsInline
-          ></video>
+          <>
+            {darkmode ? (
+              <video
+                src="/852435-hd_1920_1080_30fps.mp4"
+                className="absolute object-center object-cover h-full w-full"
+                poster="/Annotation 2025-10-16 153734.jpg"
+                autoPlay
+                loop
+                muted
+                playsInline
+              ></video>
+            ) : (
+              <video
+                src="/2040076-hd_1920_1080_24fps.mp4"
+                className="absolute object-center object-cover h-full w-full"
+                poster="/Annotation 2025-10-12 171545.jpg"
+                autoPlay
+                loop
+                muted
+                playsInline
+              ></video>
+            )}
+          </>
         )}
-        <div className="relative z-10 flex items-stretch p-2 md:p-15 gap-10 justify-between md:bg-[#ffffff77] md:dark:bg-[#000000bd] bg-transparent">
+        <div className="relative z-10 flex items-stretch p-2 md:p-15 gap-10 justify-between md:bg-[#ffffff77] md:dark:bg-[#000000a2] bg-transparent">
           <div className="flex-[7] hidden md:flex items-center justify-start">
-            <Image
-              src={"/Annotation 2025-10-12 172044.png"}
-              alt="lets talk - typography"
-              className="w-full object-cover"
-              width={763}
-              height={387}
-            ></Image>
+            {darkmode ? (
+              <Image
+                src={"/lets-talk-typo-dark.png"}
+                alt="lets talk - typography-dark"
+                className="w-full object-cover"
+                width={763}
+                height={387}
+              ></Image>
+            ) : (
+              <Image
+                src={"/Annotation 2025-10-12 172044.png"}
+                alt="lets talk - typography"
+                className="w-full object-cover"
+                width={763}
+                height={387}
+              ></Image>
+            )}
           </div>
           <div className="flex bg-white dark:bg-neutral-900 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-xl shadow shadow-primary-glass rounded-lg flex-[3] flex-col gap-5 py-5 px-10 pb-6 items-stretch">
             <h4
