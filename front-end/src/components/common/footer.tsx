@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6 items-center text-neutral-600 dark:text-neutral-200">
           <h5 className="text-lg">برای دریافت فایل کامل رزومه کلیک کنید</h5>
           <Link
-            href={"/CV-Amin Derakhshande.pdf"}
+            href={"/cv-derakhshande.pdf"}
             download={true}
             className="bg-gradient-to-r flex flex-row-reverse justify-center items-end gap-1 hover:animate-pulse from-primary to-secondary border-2 border-white outline-2 outline-primary dark:outline-secondary p-3 px-4 rounded-lg text-neutral-50 text-shadow-2xs"
           >
