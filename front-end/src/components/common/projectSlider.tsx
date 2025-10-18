@@ -12,6 +12,7 @@ import ZustandSvg from "../icons/zustand-svg";
 import NextjsSvg from "../icons/nextjs-svg";
 import CssSvg from "../icons/css-svg";
 import HtmlSvg from "../icons/html-svg ";
+import Image from "next/image";
 
 const ProjectSlider = ({ project }: any) => {
   return (
@@ -64,7 +65,12 @@ const ProjectSlider = ({ project }: any) => {
       <div className="flex flex-[9] justify-end relative h-fit">
         <figure className="w-full aspect-[1027/642] relative text-neutral-900 dark:text-neutral-200 h-fit">
           <div className="top-0 right-0 absolute w-full">
-            <img src="/f9ccd1187b7c1c3c4d6ecc3b4be12efe.png" alt="laptop" />
+            <Image
+              src="/f9ccd1187b7c1c3c4d6ecc3b4be12efe.png"
+              alt="laptop"
+              width={1027}
+              height={642}
+            ></Image>
           </div>
           {project?.gallery.length ? (
             <div className="relative image-wrapper w-[76%] h-[80%] mx-auto bg-amber-700 outline-4 outline-black rounded-lg mt-[2%] overflow-y-scroll scrollbar-hide">
@@ -78,7 +84,12 @@ const ProjectSlider = ({ project }: any) => {
         </figure>
         <figure className="w-[20%] absolute bottom-0 right-[-2px] aspect-[526/961] text-neutral-900 dark:text-neutral-200">
           <div className="top-0 right-0 absolute w-full h-full">
-            <img src="/30c3c9f943e1f47729c6a627bb02ccef.png" alt="smartphone" />
+            <Image
+              src="/30c3c9f943e1f47729c6a627bb02ccef.png"
+              alt="smartphone"
+              width={526}
+              height={961}
+            ></Image>
           </div>
           {project?.gallery.length && project.gallery[0].mobile ? (
             <div className="relative image-wrapper w-[75%] h-[73%] mx-auto bg-amber-700 outline-2 outline-black mt-[21%] overflow-y-scroll scrollbar-hide">

@@ -6,7 +6,7 @@ import SocialIcons from "./social-icons";
 const Footer = () => {
   return (
     <footer className="mt-auto">
-      <div className="footer-container pt-20 flex flex-col gap-15 overflow-y-hidden bg-[url(/2147734183.jpg)] dark:bg-[url(/417214515_fb463481-61a6-4dde-9787-66a180fa208c.jpg)] bg-cover bg-center bg-[#ffffffb3] dark:bg-[#000000bd] bg-blend-lighten dark:bg-blend-darken px-5 md:px-40 text-neutral-800 dark:text-neutral-200">
+      <div className="footer-container pt-20 flex flex-col gap-15 overflow-y-hidden bg-[url(/2147734183.webp)] dark:bg-[url(/66a180fa208c.webp)] bg-cover bg-center bg-[#ffffffb3] dark:bg-[#000000bd] bg-blend-lighten dark:bg-blend-darken px-5 md:px-40 text-neutral-800 dark:text-neutral-200">
         <div className="flex flex-col gap-6 items-center text-neutral-600 dark:text-neutral-200">
           <h5 className="text-lg">برای دریافت فایل کامل رزومه کلیک کنید</h5>
           <Link
