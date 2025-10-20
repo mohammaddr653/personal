@@ -27,7 +27,7 @@ const Greetings = () => {
           ></TypeWriter>
         </div>
         <Image
-          src="/7247961_35736489.png"
+          src="/7247961_35736489.webp"
           alt="mohammad amin derakhshande"
           className="w-[500px]"
           width={800}

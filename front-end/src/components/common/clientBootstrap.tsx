@@ -2,14 +2,16 @@
 
 "use client";
 import { useScrollStore, useWidthStore } from "@/store";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import useLoadUser from "@/hooks/useLoadUser";
+import Loading from "@/app/loading";
 
 const ClientBootstrap = () => {
   const { user, getAuthedUser } = useLoadUser();
   const { isScrolled, setIsScrolled } = useScrollStore();
   const { width, setWidth } = useWidthStore();
+  const [fontsLoaded, setFontsLoaded] = useState<boolean>(false);
 
   function handleScroll() {
     let lastScrollTop = 0;
@@ -23,6 +25,7 @@ const ClientBootstrap = () => {
   }
 
   useEffect(() => {
+    document.fonts.ready.then(() => setFontsLoaded(true));
     setWidth(window.innerWidth);
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -35,7 +38,7 @@ const ClientBootstrap = () => {
     };
   }, []);
 
-  return null;
+  return fontsLoaded ? null : <Loading></Loading>;
 };
 
 export default ClientBootstrap;
