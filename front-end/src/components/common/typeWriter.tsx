@@ -19,7 +19,7 @@ const TypeWriter = ({ text, speed, ...props }: any) => {
       clearInterval(interval);
     };
   }, [text, speed]);
-  return <p {...props}>{displayedText}</p>;
+  return <h4 {...props}>{displayedText}</h4>;
 };
 
 export default TypeWriter;
