@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import DownloadSvg from "../icons/download-svg";
 import SocialIcons from "./social-icons";
@@ -26,20 +25,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-auto">
-          <Image
+          <img
             src={"/derakhshande-dark.png"}
             alt="تایپوگرافی"
             className="hidden dark:block"
-            width={1906}
-            height={133}
-          ></Image>
-          <Image
+          />
+          <img
             src={"/derakhshande.png"}
             alt="تایپوگرافی"
             className="dark:hidden"
-            width={1906}
-            height={133}
-          ></Image>
+          />
         </div>
       </div>
     </footer>

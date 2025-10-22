@@ -1,7 +1,6 @@
 import { vazir } from "@/app/ui/fonts";
 import SocialIcons from "./social-icons";
 import TypeWriter from "./typeWriter";
-import Image from "next/image";
 
 const Greetings = () => {
   return (
@@ -26,14 +25,11 @@ const Greetings = () => {
             className="text-size15 md:text-2xl"
           ></TypeWriter>
         </div>
-        <Image
+        <img
           src="/7247961_35736489.webp"
           alt="mohammad amin derakhshande"
           className="w-[500px]"
-          width={800}
-          quality={100}
-          height={760}
-        ></Image>
+        />
       </div>
       <div className="flex mt-auto mb-5 gap-3 text-neutral-700 dark:text-neutral-50">
         <SocialIcons

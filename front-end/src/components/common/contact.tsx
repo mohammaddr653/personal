@@ -1,7 +1,6 @@
 "use client";
 import { roboto } from "@/app/ui/fonts";
 import { useDarkStore, useWidthStore } from "@/store";
-import Image from "next/image";
 import PhoneSvg from "../icons/phone-svg";
 import EmailSvg from "../icons/email-svg";
 import LocationSvg from "../icons/location-svg";
@@ -77,21 +76,17 @@ const Contact = () => {
         <div className="relative z-10 flex items-stretch p-2 md:p-15 gap-10 justify-between md:bg-[#ffffff77] md:dark:bg-[#000000a2] bg-transparent">
           <div className="flex-[7] hidden md:flex items-center justify-start">
             {darkmode ? (
-              <Image
+              <img
                 src={"/lets-talk-typo-dark.png"}
                 alt="lets talk - typography-dark"
                 className="w-full object-cover"
-                width={763}
-                height={387}
-              ></Image>
+              />
             ) : (
-              <Image
+              <img
                 src={"/Annotation 2025-10-12 172044.png"}
                 alt="lets talk - typography"
                 className="w-full object-cover"
-                width={763}
-                height={387}
-              ></Image>
+              />
             )}
           </div>
           <div className="flex bg-white dark:bg-neutral-900 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-xl shadow shadow-primary-glass rounded-lg flex-[3] flex-col gap-5 py-5 px-10 pb-6 items-stretch">
