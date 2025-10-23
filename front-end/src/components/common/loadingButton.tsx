@@ -15,6 +15,7 @@ const LoadingButton = (props: LoadingButtonProps) => {
       disabled={props.loading | props.disabled ? true : false}
       className={props.className}
       form={props.form}
+      aria-label="submit button"
     >
       {props.loading ? "loading" : props.children}
     </button>

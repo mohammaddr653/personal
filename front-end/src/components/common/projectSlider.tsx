@@ -18,9 +18,9 @@ const ProjectSlider = ({ project }: any) => {
     <div className="projectslider-container w-full flex flex-col-reverse md:flex-row justify-between items-center md:gap-5">
       <div className="flex flex-[4] flex-col self-stretch md:self-auto gap-7 md:gap-25 h-fit">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <h5 className="text-center text-2xl font-weight400 text-primary dark:text-secondary">
+          <h4 className="text-center text-2xl font-weight400 text-primary dark:text-secondary">
             {project?.title}
-          </h5>
+          </h4>
           <p className="text-center md:text-right text-size15 font-weight200">
             {project?.description}
           </p>
@@ -53,7 +53,7 @@ const ProjectSlider = ({ project }: any) => {
             {project?.online ? (
               <Link
                 href={project?.online}
-                className="border border-primary rounded-lg p-2 px-3 cursor-pointer text-neutral-50 bg-primary-glass"
+                className="border border-primary rounded-lg p-2 px-3 cursor-pointer text-white bg-neutral-primary"
               >
                 نمونه آنلاین
               </Link>

@@ -1,10 +1,10 @@
 //this component is a typing animation that you can use for beautiful type writings
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const TypeWriter = ({ text, speed, ...props }: any) => {
-  const [displayedText, setDisplayedText] = useState("");
+const TypeWriter = ({ text, speed }: any) => {
+  const [displayedText, setDisplayedText] = useState(text);
 
   useEffect(() => {
     let i = 0;
@@ -19,7 +19,7 @@ const TypeWriter = ({ text, speed, ...props }: any) => {
       clearInterval(interval);
     };
   }, [text, speed]);
-  return <h4 {...props}>{displayedText}</h4>;
+  return <React.Fragment>{displayedText}</React.Fragment>;
 };
 
 export default TypeWriter;

@@ -13,7 +13,7 @@ const About = () => {
           <span className="bg-primary dark:bg-secondary w-0.75 h-full ms-0.5 rounded-md hidden md:flex"></span>
           <div className="flex items-center gap-4 py-3">
             <AppSvg width={"40px"} stroke={"currentColor"}></AppSvg>
-            <h4>دانش فنی و آشنایی با اصول دیتابیس ، سرور و کلاینت</h4>
+            <h3>دانش فنی و آشنایی با اصول دیتابیس ، سرور و کلاینت</h3>
           </div>
         </li>
         <span className="bg-primary dark:bg-secondary rounded-full w-2 h-2 hidden md:flex"></span>
@@ -21,7 +21,7 @@ const About = () => {
           <span className="bg-primary dark:bg-secondary w-0.75 h-full ms-0.5 rounded-md hidden md:flex"></span>
           <div className="flex items-center gap-4 py-3">
             <SitemapSvg width={"40px"} stroke={"currentColor"}></SitemapSvg>
-            <h4>دید جامع و آینده نگر در طراحی و توسعه</h4>
+            <h3>دید جامع و آینده نگر در طراحی و توسعه</h3>
           </div>
         </li>
         <span className="bg-primary dark:bg-secondary rounded-full w-2 h-2 hidden md:flex"></span>
@@ -33,7 +33,7 @@ const About = () => {
               fill={"none"}
               stroke={"currentColor"}
             ></AnnotationSvg>
-            <h4>ارتباط کلامی قوی و توانایی حل مسئله</h4>
+            <h3>ارتباط کلامی قوی و توانایی حل مسئله</h3>
           </div>
         </li>
       </ul>

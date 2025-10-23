@@ -16,7 +16,7 @@ const DarkmodeSwitch = () => {
   }, [darkmode]);
 
   return (
-    <button onClick={handleSwitch} className="cursor-pointer">
+    <button onClick={handleSwitch} className="cursor-pointer" aria-label="Color mode switch">
       {darkmode ? (
         <SunSvg width={25} fill={"currentColor"}></SunSvg>
       ) : (

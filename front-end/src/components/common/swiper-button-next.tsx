@@ -6,6 +6,7 @@ const SwiperButtonNext = ({ className }: any) => {
     <button
       className={`swiper-next ${className}`}
       onClick={() => swiper.slideNext()}
+      aria-label="Next slide"
     >
       <i className="bi bi-chevron-left"></i>
     </button>

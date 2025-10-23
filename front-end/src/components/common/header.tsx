@@ -44,6 +44,7 @@ const Header = () => {
           <button
             onClick={() => setMobileMenuShow(true)}
             className={"cursor-pointer md:hidden"}
+            aria-label="Open menu"
           >
             <MenuSvg width={30} fill={"currentColor"}></MenuSvg>
           </button>
@@ -64,6 +65,7 @@ const Header = () => {
             <button
               onClick={() => setMobileMenuShow(false)}
               className={"cursor-pointer text-primary dark:text-secondary"}
+              aria-label="Close button"
             >
               <CloseSvg width={25} fill={"currentColor"}></CloseSvg>
             </button>

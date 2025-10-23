@@ -5,6 +5,9 @@ import Skills from "@/components/common/skills";
 import { Metadata } from "next";
 import Contact from "@/components/common/contact";
 
+const baseURL =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://aminderakhshande.ir";
+
 export const metadata: Metadata = {
   title: "محمدامین درخشنده | توسعه‌دهنده وب",
   description:
@@ -42,17 +45,20 @@ export const metadata: Metadata = {
     "جاوااسکریپت",
   ],
   authors: [
-    { name: "Mohammad Amin Derakhshande", url: "https://aminderakhshande.ir" },
+    {
+      name: "Mohammad Amin Derakhshande",
+      url: `${baseURL}`,
+    },
   ],
   openGraph: {
     title: "محمدامین درخشنده | توسعه‌دهنده وب",
     description:
       "سلام . محمد امین درخشنده هستم ، توسعه دهنده وب . این رزومه آنلاین و پورتفولیوی من است . در این صفحه اطلاعاتی درباره من ، نمونه کارها و راه های ارتباط با من قرار دارد .",
-    url: "https://aminderakhshande.ir",
+    url: `${baseURL}`,
     siteName: "Amin Derakhshande Portfolio | رزومه آنلاین محمدامین درخشنده",
     images: [
       {
-        url: "https://aminderakhshande.ir/aminderakhshande.ir_screenshot.webp",
+        url: `${baseURL}/aminderakhshande.ir_screenshot.webp`,
         width: 1200,
         height: 630,
         alt: "Amin Derakhshande Portfolio Preview",
@@ -65,10 +71,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "محمدامین درخشنده | توسعه‌دهنده‌ وب",
     description:
-      "سلام . محمد امین درخشنده هستم ، توسعه دهنده وب . این رزومه آنلاین و پورتفولیوی من است . در این صفحه اطلاعاتی درباره من ، نمونه کارها و راه های ارتباط با من قرار دارد .",
-    images: ["https://aminderakhshande.ir/aminderakhshande.ir_screenshot.webp"],
+      "سلام! من محمد امین درخشنده هستم ، توسعه دهنده وب . این رزومه آنلاین و پورتفولیوی من است . در این صفحه اطلاعاتی درباره من ، نمونه کارها و راه های ارتباط با من قرار دارد .",
+    images: [`${baseURL}/aminderakhshande.ir_screenshot.webp`],
   },
-  metadataBase: new URL("https://aminderakhshande.ir"),
+  metadataBase: new URL(`${baseURL}`),
   robots: {
     index: true,
     follow: true,
@@ -80,11 +86,51 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: `${baseURL}`,
+  },
 };
 
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "محمد امین درخشنده",
+            url: `${baseURL}`,
+            jobTitle: "توسعه‌دهنده وب",
+            sameAs: [
+              "https://www.instagram.com/mohammaddr653/?hl=fa",
+              "https://telegram.me/mohammaddr653",
+              "https://www.linkedin.com/in/amin-derakhshande/",
+              "https://eitaa.com/mohammaddr653",
+            ],
+            description:
+              "سلام! من محمد امین درخشنده هستم، توسعه‌دهنده وب. در این رزومه آنلاین می‌توانید نمونه کارها و مهارت‌های من را ببینید و با من در ارتباط باشید.",
+            knowsAbout: [
+              "Next.js",
+              "React",
+              "Typescript",
+              "Javascript",
+              "Nodejs",
+              "Express",
+              "Frontend Development",
+              "Full Stack Development",
+              "طراحی سایت",
+              "برنامه نویسی وب",
+            ],
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${baseURL}`,
+            },
+          }),
+        }}
+      />
+
       <div className="homepage-container flex flex-col gap-20 pb-20">
         <Greetings></Greetings>
         <About></About>
