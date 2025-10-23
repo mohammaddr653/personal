@@ -14,9 +14,9 @@ import axios from "axios";
 import Image from "next/image";
 
 const Contact = () => {
-  const { call, loading } = callManager();
-  const { width, setWidth } = useWidthStore();
-  const { darkmode, setDarkmode } = useDarkStore();
+  const { call } = callManager();
+  const { width } = useWidthStore();
+  const { darkmode } = useDarkStore();
 
   const formSchema = z.object({
     name: z.string().min(1),

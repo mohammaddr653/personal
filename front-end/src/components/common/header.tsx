@@ -1,5 +1,5 @@
 "use client";
-import { useScrollStore, useUserStore, useWidthStore } from "../../store";
+import { useScrollStore, useUserStore } from "../../store";
 import Link from "next/link";
 import DarkmodeSwitch from "./darkmode-switch";
 import MenuSvg from "../icons/menu-svg";
@@ -11,7 +11,7 @@ import MenuNavbar from "./menu-navbar";
 
 const Header = () => {
   const [mobileMenuShow, setMobileMenuShow] = useState<boolean>(false);
-  const { isScrolled, setIsScrolled } = useScrollStore();
+  const { isScrolled } = useScrollStore();
   const { user } = useUserStore();
   const pathname = usePathname(); // Detects route changes
 

@@ -4,13 +4,11 @@
 import { useScrollStore, useWidthStore } from "@/store";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import useLoadUser from "@/hooks/useLoadUser";
 import Loading from "@/app/loading";
 
 const ClientBootstrap = () => {
-  const { user, getAuthedUser } = useLoadUser();
   const { isScrolled, setIsScrolled } = useScrollStore();
-  const { width, setWidth } = useWidthStore();
+  const { setWidth } = useWidthStore();
   const [fontsLoaded, setFontsLoaded] = useState<boolean>(false);
 
   function handleScroll() {
@@ -31,7 +29,6 @@ const ClientBootstrap = () => {
     const handleResize = () => setWidth(innerWidth);
     window.addEventListener("resize", handleResize);
     axios.defaults.withCredentials = true; //sends httponly cookies to the server by default
-    getAuthedUser(); //if token exist , set the user
     window.addEventListener("scroll", handleScroll, { passive: false });
     return () => {
       window.removeEventListener("scroll", handleScroll);

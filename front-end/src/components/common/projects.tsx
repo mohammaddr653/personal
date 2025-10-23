@@ -24,7 +24,7 @@ import axios from "axios";
 import { SERVER_API } from "../../../config";
 
 const Projects = () => {
-  const { call, loading } = callManager();
+  const { call } = callManager();
   const [projects, setProjects] = useState<any[]>([]);
 
   async function load() {
