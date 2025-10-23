@@ -9,7 +9,7 @@ const Greetings = () => {
       <Image
         src={"/Background_Image.webp"}
         alt="background-image-light"
-        className="z-0 dark:hidden"
+        className="z-0 dark:hidden object-cover"
         priority
         fetchPriority="high"
         unoptimized
@@ -18,7 +18,7 @@ const Greetings = () => {
       <Image
         src={"/jason-mavrommatis-FzURx0rFhUk-unsplash.webp"}
         alt="background-image-dark"
-        className=" hidden dark:block"
+        className=" hidden dark:block object-cover"
         priority
         fetchPriority="high"
         unoptimized

@@ -24,9 +24,12 @@ const ClientBootstrap = () => {
 
   useEffect(() => {
     document.fonts.ready.then(() => setFontsLoaded(true));
-    const innerWidth = window.innerWidth;
-    setWidth(innerWidth);
-    const handleResize = () => setWidth(innerWidth);
+    const initialInnerWidth = window.innerWidth;
+    setWidth(initialInnerWidth);
+    const handleResize = () => {
+      const innerWidth = window.innerWidth;
+      setWidth(innerWidth);
+    };
     window.addEventListener("resize", handleResize);
     axios.defaults.withCredentials = true; //sends httponly cookies to the server by default
     window.addEventListener("scroll", handleScroll, { passive: false });
