@@ -55,7 +55,7 @@ const Contact = () => {
               <video
                 src="/852435-hd_1920_1080_30fps.mp4"
                 className="absolute object-center object-cover h-full w-full"
-                poster="/Annotation 2025-10-16 153734.jpg"
+                poster="/Annotation 2025-10-16 153734.webp"
                 autoPlay
                 loop
                 muted
@@ -65,7 +65,7 @@ const Contact = () => {
               <video
                 src="/2040076-hd_1920_1080_24fps.mp4"
                 className="absolute object-center object-cover h-full w-full"
-                poster="/Annotation 2025-10-12 171545.jpg"
+                poster="/Annotation 2025-10-12 171545.webp"
                 autoPlay
                 loop
                 muted
@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="flex-[7] hidden md:flex items-center justify-start">
             {darkmode ? (
               <Image
-                src={"/lets-talk-typo-dark.png"}
+                src={"/lets-talk-typo-dark.webp"}
                 alt="lets talk - typography-dark"
                 className="w-full"
                 width={763}
@@ -87,7 +87,7 @@ const Contact = () => {
               ></Image>
             ) : (
               <Image
-                src={"/Annotation 2025-10-12 172044.png"}
+                src={"/Annotation 2025-10-12 172044.webp"}
                 alt="lets talk - typography"
                 className="w-full"
                 width={763}

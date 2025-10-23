@@ -64,10 +64,7 @@ const ProjectSlider = ({ project }: any) => {
       <div className="flex flex-[9] justify-end relative h-fit">
         <figure className="w-full aspect-[1027/642] relative text-neutral-900 dark:text-neutral-200 h-fit">
           <div className="top-0 right-0 absolute w-full">
-            <img
-              src="/f9ccd1187b7c1c3c4d6ecc3b4be12efe.png"
-              alt="laptop"
-            />
+            <img src="/f9ccd1187b7c1c3c4d6ecc3b4be12efe.webp" alt="laptop" />
           </div>
           {project?.gallery.length ? (
             <div className="relative image-wrapper w-[76%] h-[80%] mx-auto bg-amber-700 outline-4 outline-black rounded-lg mt-[2%] overflow-y-scroll scrollbar-hide">
@@ -82,7 +79,7 @@ const ProjectSlider = ({ project }: any) => {
         <figure className="w-[20%] absolute bottom-0 right-[-2px] aspect-[526/961] text-neutral-900 dark:text-neutral-200">
           <div className="top-0 right-0 absolute w-full h-full">
             <img
-              src="/30c3c9f943e1f47729c6a627bb02ccef.png"
+              src="/30c3c9f943e1f47729c6a627bb02ccef.webp"
               alt="smartphone"
             />
           </div>

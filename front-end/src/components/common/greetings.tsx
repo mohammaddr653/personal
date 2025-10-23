@@ -11,6 +11,7 @@ const Greetings = () => {
         alt="background-image-light"
         className="z-0 dark:hidden"
         priority
+        fetchPriority="high"
         unoptimized
         fill
       ></Image>
@@ -18,6 +19,8 @@ const Greetings = () => {
         src={"/jason-mavrommatis-FzURx0rFhUk-unsplash.webp"}
         alt="background-image-dark"
         className=" hidden dark:block"
+        priority
+        fetchPriority="high"
         unoptimized
         fill
       ></Image>

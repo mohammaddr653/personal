@@ -26,8 +26,9 @@ const ClientBootstrap = () => {
 
   useEffect(() => {
     document.fonts.ready.then(() => setFontsLoaded(true));
-    setWidth(window.innerWidth);
-    const handleResize = () => setWidth(window.innerWidth);
+    const innerWidth = window.innerWidth;
+    setWidth(innerWidth);
+    const handleResize = () => setWidth(innerWidth);
     window.addEventListener("resize", handleResize);
     axios.defaults.withCredentials = true; //sends httponly cookies to the server by default
     getAuthedUser(); //if token exist , set the user

@@ -26,12 +26,12 @@ const Footer = () => {
         </div>
         <div className="mt-auto">
           <img
-            src={"/derakhshande-dark.png"}
+            src={"/derakhshande-dark.webp"}
             alt="تایپوگرافی"
             className="hidden dark:block"
           />
           <img
-            src={"/derakhshande.png"}
+            src={"/derakhshande.webp"}
             alt="تایپوگرافی"
             className="dark:hidden"
           />

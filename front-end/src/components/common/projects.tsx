@@ -29,7 +29,6 @@ const Projects = () => {
 
   async function load() {
     const response = await call(axios.get(SERVER_API + "/projects"), false);
-    console.log(response);
     setProjects([...response?.data.data]);
   }
 

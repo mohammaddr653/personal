@@ -5,10 +5,12 @@ import { Vazirmatn } from "next/font/google";
 export const roboto = Roboto({
   weight: ["500", "800", "900"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const vazir = Vazirmatn({
   subsets: ["arabic"],
+  display: "swap",
 });
 
 export const iransans = localFont({
@@ -34,6 +36,7 @@ export const iransans = localFont({
       style: "normal",
     },
   ],
+  display: "swap",
 });
 
 export const nastaliq = localFont({
@@ -44,4 +47,5 @@ export const nastaliq = localFont({
       style: "normal",
     },
   ],
+  display: "swap",
 });
