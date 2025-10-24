@@ -3,8 +3,7 @@ import { useScrollStore, useUserStore } from "../../store";
 import Link from "next/link";
 import DarkmodeSwitch from "./darkmode-switch";
 import MenuSvg from "../icons/menu-svg";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { useState } from "react";
 import CloseSvg from "../icons/close-svg";
 import Logo from "./logo";
 import MenuNavbar from "./menu-navbar";
@@ -13,11 +12,6 @@ const Header = () => {
   const [mobileMenuShow, setMobileMenuShow] = useState<boolean>(false);
   const { isScrolled } = useScrollStore();
   const { user } = useUserStore();
-  const pathname = usePathname(); // Detects route changes
-
-  useEffect(() => {
-    setMobileMenuShow(false); //با هربار تغییر آدرس منوی موبایل بسته شود
-  }, [pathname]);
 
   return (
     <header className="fixed z-50 w-full max-w-screen">
@@ -72,7 +66,10 @@ const Header = () => {
           </div>
           <nav className="flex p-5">
             <ul className="flex flex-col gap-5 text-size17 text-primary dark:text-secondary">
-              <MenuNavbar></MenuNavbar>
+              <MenuNavbar
+                mobileMenuShow={mobileMenuShow}
+                setMobileMenuShow={setMobileMenuShow}
+              ></MenuNavbar>
             </ul>
           </nav>
         </div>
