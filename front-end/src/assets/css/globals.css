@@ -15,6 +15,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-family: var(--font-iransans), sans-serif;
   }
   input {
     outline: none;
@@ -29,7 +30,7 @@
   --color-primary: #169976;
   --color-primary-glass: #167c61c9;
   --color-secondary: #1dcd9f;
-  --color-neutral-primary: #11644E;
+  --color-neutral-primary: #11644e;
   --color-cu-neutral-400: #f8f3e6;
   --color-cu-neutral-500: #e7cc8f;
   --color-cu-neutral-600: #d8d2c2;

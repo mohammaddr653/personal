@@ -37,6 +37,8 @@ export const iransans = localFont({
     },
   ],
   display: "swap",
+  variable: "--font-iransans",
+  preload: true,
 });
 
 export const nastaliq = localFont({

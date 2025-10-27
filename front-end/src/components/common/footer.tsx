@@ -11,6 +11,7 @@ const Footer = () => {
           <Link
             href={"/cv-derakhshande.pdf"}
             download={true}
+            prefetch={false}
             className="bg-gradient-to-r flex flex-row-reverse justify-center items-end gap-1 hover:animate-pulse from-primary to-secondary border-2 border-white outline-2 outline-primary dark:outline-secondary p-3 px-4 rounded-lg text-neutral-50 text-shadow-2xs"
           >
             <DownloadSvg width={30} fill={"currentColor"}></DownloadSvg>
