@@ -172,7 +172,7 @@ const Contact = () => {
             >
               <h4 className="flex flex-row-reverse gap-1 items-end">
                 <PhoneSvg width={20} fill={"currentColor"}></PhoneSvg>
-                0989377372231
+                09377372231
               </h4>
               <h4 className="flex flex-row-reverse gap-1 items-end">
                 <EmailSvg width={20} fill={"currentColor"}></EmailSvg>
